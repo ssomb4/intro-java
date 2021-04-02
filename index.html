@@ -7,8 +7,37 @@
 
 </head>
 <body>
+
+    <h3>O número é: </h3>
+    <button on click="maior()">É maior!</button>
+    <button on click="menor()">É menor!</button>
+    <button on click="acertou()">É esse!</button>
+
+
     <script>
-        alert{"Olá Mundo!"};
+        var minNum = 0;
+        var maxNum = 100;
+        var tentativa = Math.round(minNum + maxNum) / 2);
+
+        document.getElementById("minNum").innerHTML = minNum;
+        document.getElementById("maxNum").innerHTML = maxNum;
+
+        var maior = function()
+        {
+            //o que acontece se o jogador pressionar "É maior..."
+        }
+
+        var menor = function()
+        {
+            //o que acontece se o jogador pressionar "É menor..."
+        }
+
+        var aceertou = function()
+        {
+            //o que acontece se o jogador pressionar "É esse...."
+            document.getElementById("genio").innerHTML = "SOU UM GÉNIO!";
+        }
+
     </script>
 </body>
 </html>
