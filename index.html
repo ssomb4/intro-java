@@ -7,11 +7,19 @@
 
 </head>
 <body>
-
+    <h1>Olá, Viajante!</h1>
+    <h2>Vamos jogar um jogo...</h2>
+    <h3>Pensa num número entre <span id="minNum"></span> e <span
+    id="maxNum"></span></h3>
+    <h3>Eu acho que o número que pensaste foi: <span id="numero">
+    </span></h3>
+    <hr>
     <h3>O número é: </h3>
     <button on click="maior()">É maior!</button>
     <button on click="menor()">É menor!</button>
     <button on click="acertou()">É esse!</button>
+    </hr>
+    <h1 id="genio"></h1>
 
 
     <script>
@@ -25,11 +33,13 @@
         var maior = function()
         {
             //o que acontece se o jogador pressionar "É maior..."
+            minNum = (minNum + maxNum) / 2;
         }
 
         var menor = function()
         {
             //o que acontece se o jogador pressionar "É menor..."
+            maxNum = (minNum + maxNum) / 2;
         }
 
         var aceertou = function()
